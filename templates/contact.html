@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/utils.css') }}">
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/contact.css') }}">
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/mobile.css') }}">
+    <title>AK-Blog - Heaven for bloggers</title>
+</head>
+
+<body>
+    <nav class="navigation max-width-1 m-auto">
+        <div class="nav-left">
+            <ahref=" /">
+                <span><img src="{{ url_for('static', filename='img/AK1.png') }}" width="120px" alt=""></span>
+                </a>
+                <ul>
+                    <li><a href="{{ url_for('index') }}">Home</a></li>
+                    <li><a href="{{ url_for('about') }}">About</a></li>
+                    <li><a href="{{ url_for('contact') }}">Contact</a></li>
+                </ul>
+        </div>
+        <div class="nav-right">
+            <form action="{{ url_for('search') }}" method="get">
+                <input class="form-input" type="text" name="query" placeholder="Article Search">
+                <button type="submit" class="btn">Search</button>
+            </form>
+        </div>
+    </nav>
+    <div class="max-width-1 m-auto">
+    </div>
+
+    <div class="contact-content font1 max-width-1 m-auto">
+        <div class="max-width-1 m-auto mx-1">
+            <h2>Feel Free to Contact Us</h2>
+            <div class="contact-form">
+                <form action="{{ url_for('submit_form') }}" method="post">
+                    <div class="form-box">
+                        <input type="text" placeholder="Enter Your Name" name="name">
+                    </div>
+                    <div class="form-box">
+                        <input type="text" placeholder="Enter Your Phone Number" name="phone">
+                    </div>
+                    <div class="form-box">
+                        <input type="text" placeholder="Enter Your Email Id" name="email">
+                    </div>
+                    <div class="form-box">
+                        <textarea name="message" cols="30" rows="10" placeholder="How may we help you?"></textarea>
+                    </div>
+                    <div class="form-box">
+                        <button type="submit" class="btn">Submit</button>
+                    </div>
+                </form>
+
+            </div>
+        </div>
+    </div>
+
+    <footer class="footer">
+        <div class="container">
+            <p>&copy; ♪Ashwin Blog. All rights reserved.</p>
+        </div>
+    </footer>
+</body>
+
+</html>

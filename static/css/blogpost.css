@@ -1,0 +1,89 @@
+.post-img {
+    height: 404px;
+    overflow: hidden;
+}
+
+.post-img img {
+    width: 100%;
+}
+
+.post-img video {
+    align-items: center;
+    margin-left: 26%;
+}
+
+.responsive-video {
+    margin: 0 auto;
+    width: 45%;
+    height: 100%;
+    max-width: 100%;
+    max-height: 100%;
+    display: block;
+    object-fit: cover;
+}
+
+/* Paragraph Styles with Background Image and Reduced Opacity */
+.paragraph p {
+    font-size: 18px;
+    line-height: 1.6;
+    margin-bottom: 20px;
+    position: relative;
+    padding: 20px;
+    border-radius: 10px;
+    background: transparent;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    background-position: center;
+}
+
+.paragraph p::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: url('../img/11.svg') no-repeat center center;
+    opacity: 0.060;
+    z-index: -1;
+    border-radius: 10px;
+    filter: blur(5px);
+}
+
+
+.blog-post-content h1 {
+    text-align: center;
+}
+
+.blog-post-content p {
+    font-size: 18px;
+}
+
+.row {
+    display: flex;
+    flex-direction: column;
+}
+
+.more-post {
+    flex-direction: row;
+    align-items: center;
+}
+
+.blogpost-meta {
+    display: flex;
+    justify-content: space-between;
+}
+
+.author-info {
+    margin: 12px 0;
+}
+
+.author-info div {
+    padding: 4px 0px;
+    font-family: var(--font2);
+}
+
+.social {
+    padding-right: 53px;
+    align-self: center;
+    cursor: pointer;
+}

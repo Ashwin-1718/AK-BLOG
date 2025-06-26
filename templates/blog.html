@@ -1,0 +1,240 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Luxurious+Script&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Felipa&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Felipa&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/utils.css') }}">
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/blogpost.css') }}">
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/mobile.css') }}">
+    <title>AK-Blog - Heaven for bloggers</title>
+</head>
+
+<body>
+    <!-- bootstrap NavBar Code  -->
+    <div class="bootstrap">
+        <h1><b>Welcome ...</b></h1>
+        <nav class="navbar navbar-expand-lg navbar-light bg-light custom-navbar">
+            <div class="container-fluid">
+                <a class="navbar-brand" href="#">𝐀𝐊</a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                    aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                        <li class="nav-item">
+                            <a class="nav-link active" aria-current="page" href="{{ url_for('index') }}">Home</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="{{ url_for('about') }}">About</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="{{ url_for('contact') }}">Contact</a>
+                        </li>
+                    </ul>
+                    <form action="{{ url_for('search') }}" class="d-flex" role="search">
+                        <input class="form-control me-2" type="search" name="query" placeholder="Search"
+                            aria-label="Search">
+                        <button class="btn btn-outline-success" type="submit">Search</button>
+                    </form>
+                </div>
+            </div>
+        </nav>
+    </div>
+    <!-- bootstrap NavBar Code end  -->
+
+    <!-- CDN BOOTSTRAP LINK -->
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"
+        integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.min.js"
+        integrity="sha384-0pUGZvbkm6XF6gxjEnlmuGrJXVbNuzT9qBBavbLwCsOGabYfZo0T0to5eqruptLy"
+        crossorigin="anonymous"></script>
+
+    <!-- MAIN CONTENT -->
+    <div class="post-img">
+        <!-- <img src="{{ url_for('static', filename='img/abc.jpg') }}" alt="ABC"> -->
+        <!-- <audio id="postAudio"
+            src="{{ url_for('static', filename='img/Ogryzek - AURA Super Slowed (Official Visualiser) [ ezmp3.cc ].mp3') }}"
+            autoplay loop hidden controls></audio> -->
+        <div class="post-img">
+            <video class="responsive-video" src="{{ url_for('static', filename='img/forza.mp4') }}" autoplay controls
+                loop></video>
+            <!-- <video class="responsive-video" src="{{ url_for('static', filename='img/2024.mp4') }}" autoplay controls loop></video> -->
+        </div>
+    </div>
+    <script src="{{ url_for('static', filename='js/script.js') }}"></script>
+
+    <div class="m-auto blog-post-content max-width-2 m-auto my-2">
+        <h1 class="font2">"Where Creativity Meets Innovation"</h1>
+        <hr>
+        <div class="blogpost-meta">
+            <div class="author-info">
+                <div>
+                    <b>
+                        Author - ~Ashwin Yadav~ (CEO Microtek)
+                    </b>
+                </div>
+                <div>04 January. 6 min read</div>
+            </div>
+        </div>
+        <div class="paragraph">
+            <p class="font1">In communications and information processing, code is a system of rules to convert
+                information—such as a letter, word, sound, image, or gesture—into another form, sometimes shortened or
+                secret, for communication through a communication channel or storage in a storage medium. An early
+                example
+                is the invention of language, which enabled a person, through speech, to communicate what they thought,
+                saw,
+                heard or felt to others. But speech limits the range of communication to the distance a voice can carry,
+                and
+                limits the audience to those present when the speech is uttered . The invention of writing, which
+                converted
+                spoken language into visual symbols, extended the range of communication across space and time.
+
+                The process of encoding converts information from a source into symbols for communication or storage.
+                Decoding is the reverse process, converting code symbols back into a form that the recipient
+                understands,
+                such as English or/and Spanish.
+
+                One reason for coding is to enable communication in places where ordinary plain language, spoken or
+                written,
+                is difficult or impossible. For example, semaphore, where the configuration of flags held by a signaler
+                or
+                the arms of a semaphore tower encodes parts of the message, typically individual letters and numbers.
+                Another person standing a great distance away can interpret the flags and reproduce the words sent.</p>
+            <p class="font1">In communications and information processing, code is a system of rules to convert
+                information—such as a letter, word, sound, image, or gesture—into another form, sometimes shortened or
+                secret, for communication through a communication channel or storage in a storage medium. An early
+                example
+                is the invention of language, which enabled a person, through speech, to communicate what they thought,
+                saw,
+                heard or felt to others. But speech limits the range of communication to the distance a voice can carry,
+                and
+                limits the audience to those present when the speech is uttered . The invention of writing, which
+                converted
+                spoken language into visual symbols, extended the range of communication across space and time.
+
+                The process of encoding converts information from a source into symbols for communication or storage.
+                Decoding is the reverse process, converting code symbols back into a form that the recipient
+                understands,
+                such as English or/and Spanish.
+
+                One reason for coding is to enable communication in places where ordinary plain language, spoken or
+                written,
+                is difficult or impossible. For example, semaphore, where the configuration of flags held by a signaler
+                or
+                the arms of a semaphore tower encodes parts of the message, typically individual letters and numbers.
+                Another person standing a great distance away can interpret the flags and reproduce the words sent.</p>
+            <p class="font1">In communications and information processing, code is a system of rules to convert
+                information—such as a letter, word, sound, image, or gesture—into another form, sometimes shortened or
+                secret, for communication through a communication channel or storage in a storage medium. An early
+                example
+                is the invention of language, which enabled a person, through speech, to communicate what they thought,
+                saw,
+                heard or felt to others. But speech limits the range of communication to the distance a voice can carry,
+                and
+                limits the audience to those present when the speech is uttered . The invention of writing, which
+                converted
+                spoken language into visual symbols, extended the range of communication across space and time.
+
+                The process of encoding converts information from a source into symbols for communication or storage.
+                Decoding is the reverse process, converting code symbols back into a form that the recipient
+                understands,
+                such as English or/and Spanish.
+
+                One reason for coding is to enable communication in places where ordinary plain language, spoken or
+                written,
+                is difficult or impossible. For example, semaphore, where the configuration of flags held by a signaler
+                or
+                the arms of a semaphore tower encodes parts of the message, typically individual letters and numbers.
+                Another person standing a great distance away can interpret the flags and reproduce the words sent.</p>
+            <p class="font1">In communications and information processing, code is a system of rules to convert
+                information—such as a letter, word, sound, image, or gesture—into another form, sometimes shortened or
+                secret, for communication through a communication channel or storage in a storage medium. An early
+                example
+                is the invention of language, which enabled a person, through speech, to communicate what they thought,
+                saw,
+                heard or felt to others. But speech limits the range of communication to the distance a voice can carry,
+                and
+                limits the audience to those present when the speech is uttered . The invention of writing, which
+                converted
+                spoken language into visual symbols, extended the range of communication across space and time.
+
+                The process of encoding converts information from a source into symbols for communication or storage.
+                Decoding is the reverse process, converting code symbols back into a form that the recipient
+                understands,
+                such as English or/and Spanish.
+
+                One reason for coding is to enable communication in places where ordinary plain language, spoken or
+                written,
+                is difficult or impossible. For example, semaphore, where the configuration of flags held by a signaler
+                or
+                the arms of a semaphore tower encodes parts of the message, typically individual letters and numbers.
+                Another person standing a great distance away can interpret the flags and reproduce the words sent.</p>
+        </div>
+    </div>
+
+    <div class="max-width-1 m-auto">
+        <hr>
+    </div>
+    <div class="home-articles max-width-1 m-auto font2">
+        <h2>People who read this also</h2>
+        <div class="row">
+            <div class="home-article more-post">
+                <div class="home-article-img">
+                    <img src="{{ url_for('static', filename='img/Gaming.avif') }}" alt="article">
+                </div>
+                <div class="home-article-content font1 center">
+                    <a href="{{ url_for('blog') }}">
+                        <h4>Learn more about Machine Learning techniques in India by joining this channel</h4>
+                    </a>
+                    <div>~Ashwin Yadav~</div>
+                    <span>07 January | 6 min read</span>
+                </div>
+            </div>
+            <div class="home-article more-post">
+                <div class="home-article-img">
+                    <img src="{{ url_for('static', filename='img/Gaming_Setup1.jpg') }}" alt="article">
+                </div>
+                <div class="home-article-content font1 center">
+                    <a href="{{ url_for('blog') }}">
+                        <h4>Learn more about Machine Learning techniques in India by joining this channel</h4>
+                    </a>
+                    <div>~Ashwin Yadav~</div>
+                    <span>07 January | 6 min read</span>
+                </div>
+            </div>
+            <div class="home-article more-post">
+                <div class="home-article-img">
+                    <img src="{{ url_for('static', filename='img/Gaming1.avif') }}" alt="article">
+                </div>
+                <div class="home-article-content font1 center">
+                    <a href="{{ url_for('blog') }}">
+                        <h4>Learn more about Machine Learning techniques in India by joining this channel</h4>
+                    </a>
+                    <div>~Ashwin Yadav~</div>
+                    <span>07 January | 6 min read</span>
+                </div>
+            </div>
+        </div>
+    </div>
+    <footer class="footer">
+        <div class="container">
+            <p>&copy; ♪Ashwin Blog. All rights reserved.</p>
+        </div>
+    </footer>
+    <button id="backToTop" class="back-to-top">↑</button>
+
+</body>
+
+</html>
