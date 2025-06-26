@@ -59,12 +59,14 @@ Deployed on: [Render](https://ak-blog-uq9p.onrender.com/)
 
 ## 📸 Screenshots
 
-| Landing Page | Blog List | About Me |
-|--------------|-----------|----------|
+| Landing Page |
+
 | ![Landing](./static/screenshots/landing.png) |
 
+ | Blog List |
 ![Blog List](./static/screenshots/blog-post.png) |
 
+| About Me |
 ![About](./static/screenshots/aboutus.png) |
 
 | Mobile View |
