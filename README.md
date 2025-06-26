@@ -61,7 +61,11 @@ Deployed on: [Render](https://ak-blog-uq9p.onrender.com/)
 
 | Landing Page | Blog List | About Me |
 |--------------|-----------|----------|
-| ![Landing](./static/screenshots/landing.png) | ![Blog List](./static/screenshots/blog-post.png) | ![About](./static/screenshots/aboutus.png) |
+| ![Landing](./static/screenshots/landing.png) |
+
+![Blog List](./static/screenshots/blog-post.png) |
+
+![About](./static/screenshots/aboutus.png) |
 
 | Mobile View |
 |-------------|
