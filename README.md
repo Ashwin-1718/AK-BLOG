@@ -9,7 +9,6 @@
 ### 🏠 Landing Page
 ![AK-Blog Screenshot](./static/screenshots/landing-page.png)
 =======
-![AK-Blog Screenshot](./static/screenshots/landing-page.png)
 >>>>>>> 9b0fc3325794b080ca2982c48b13c9f1c684238d
 
 
@@ -62,11 +61,11 @@ Deployed on: [Render](https://ak-blog-uq9p.onrender.com/)
 
 | Landing Page | Blog List | About Me |
 |--------------|-----------|----------|
-| ![Landing](./screenshots/screenshot1.png) | ![Blog List](./screenshots/screenshot2.png) | ![About](./screenshots/screenshot3.png) |
+| ![Landing](./static/screenshots/landing.png) | ![Blog List](./static/screenshots/blog-post.png) | ![About](./static/screenshots/aboutus.png) |
 
 | Mobile View |
 |-------------|
-| ![Mobile](./screenshots/screenshot4.png) |
+| ![Mobile](./static/screenshots/Mobile%20view.png) |
 
 
 
@@ -81,6 +80,19 @@ Deployed on: [Render](https://ak-blog-uq9p.onrender.com/)
 
 
 ![License](https://img.shields.io/badge/License-MIT-green)
+
+
+
+**Create and activate a virtual environment (recommended)**
+python -m venv venv
+source venv/bin/activate  # On Windows: venv\Scripts\activate
+
+**Install dependencies**
+pip install -r requirements.txt
+
+**Run the application**
+python app.py
+
 
 🗂 Project Structure
 AK-Blog/
