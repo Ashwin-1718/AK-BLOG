@@ -4,8 +4,6 @@
 
 ## 🖼️ Preview
 
-## 📸 Screenshots
-
 ### 🏠 Landing Page
 ![AK-Blog Screenshot](./static/screenshots/landing-page.png)
 =======
